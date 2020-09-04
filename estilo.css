@@ -1,0 +1,99 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:white;
+  font-family:font-family: 'Muli', sans-serif;
+  font-size:18px;
+}
+body {
+  display: flex;
+  height: 80vh;
+  flex-flow: column;
+  font-size: 16px;
+  background: #1B5E20;
+}
+.header {
+  /*outline: 1px solid gold;*/
+  height: 3rem;
+  background: #CC0033;
+}
+.menu {
+  display: flex;
+}
+.menu-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  list-style: none;
+  flex: 1;
+  outline: 1px solid white;
+  line-height: 3rem;
+  text-align: center;
+  transition: flex 0.5s;
+}
+.menu-item:hover {
+  flex: 2;
+  cursor: pointer;
+}
+.container {
+  /*background: lime;*/
+  display: flex;
+  height: inherit; /*hereda del padre la altura*/
+  background: linear-gradient(#CC0033, #1B5E20);
+}
+.content {
+  flex: 1;
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  text-align: justify;
+  padding:5%;
+  /*align-items: center;*/
+  /*background-color: rgba(255, 255, 255, 0.1);*/
+  /*background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));*/
+}
+.content__titulo{
+	margin-bottom:5%;
+	height:10%;
+}
+.content__titulo p{
+	font-size:40px;
+}
+.content__biografia{
+	max-width:80%;
+	height:20%;
+}
+.aside {
+  /*outline: 1px solid magenta;*/
+  flex: 0 0 25%;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+}
+.aside__foto img{
+	margin-top:30px;
+	width: 200px;
+	height:auto;
+	border-radius: 140px;
+	object-fit: cover;
+}
+.aside__descripcion{
+	margin-top:20px;
+}
+.footer {
+  /*outline: 1px solid salmon;*/
+  height: 3rem;
+  margin-top: auto;
+  background: #1B5E20;
+  display: flex;
+  align-items: center;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+
